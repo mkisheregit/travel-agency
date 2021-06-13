@@ -22,7 +22,7 @@ function Booktickets({ handlemoreinputs,moreinputs,inputs,updatedata,moredata,De
                     <div>
                         <p> Travel Medium</p> 
 
-                        <select name="travelmedium"     className="travelmedium"   name="travelmedium" onChange={(e)=>{handlemoreinputs(e)}}>
+                        <select   className="travelmedium"   name="travelmedium" onChange={(e)=>{handlemoreinputs(e)}}>
                             <option value="none" disabled selected>choose from options</option>
                         <option value="taxi">taxi</option>
                         <option value="bus">bus</option>
@@ -34,7 +34,7 @@ function Booktickets({ handlemoreinputs,moreinputs,inputs,updatedata,moredata,De
                        
                         <p>Gender</p>
 
-                        <select name="gender" className="gender" name="gender"  onChange={(e)=>{handlemoreinputs(e)}}>
+                        <select  className="gender" name="gender"  onChange={(e)=>{handlemoreinputs(e)}}>
                             <option value="none" disabled selected >choose</option>
                             <option value="male">Male</option>
                             <option value="female">Female</option>

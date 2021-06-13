@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Mktravels.css";
 import Footerr from "./Footerr";
 
@@ -9,7 +9,7 @@ function Mktravels({data, handleinput,Addtrips,Removethisitem,inputs,interchange
     <div className="home">
       <div className="input-box">
         <form>
-          <img src="bus-image.jpg" alt="bus-image" className="bus-image" />
+          <img src="https://images.unsplash.com/photo-1597920467799-ec8bee99f6eb?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGJ1c3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="not-showing" className="bus-image" />
           <div className="allinput-fields">
             {" "}<p>
             

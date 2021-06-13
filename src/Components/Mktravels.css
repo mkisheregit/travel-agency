@@ -29,6 +29,7 @@
     font-size: 21px;
     color: white;
     padding: 15px;
+    z-index: 400;
 }
 
 .allinput-fields>p {
@@ -41,7 +42,8 @@
     border: none;
     outline: none;
     font-size: 25px;
-    color: rgba(0, 0, 0, 0.685);
+    color: crimson;
+    text-align: center;
 }
 
 .addtrip-button {
@@ -154,7 +156,7 @@ ul {
 .entries {
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: flex-start;
 }
 
 ul>ul {

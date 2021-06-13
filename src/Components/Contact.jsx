@@ -44,7 +44,7 @@ return true;
 
     return (<div className="contact">
                <div className="map-section">
-                   <img src="./map-image.jpg" alt="map-image" />
+                   <img src="https://images.unsplash.com/photo-1604357209793-fca5dca89f97?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bWFwfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="map" />
                    <div className="heading">
                    <h1>Contact us</h1>
                    </div>
