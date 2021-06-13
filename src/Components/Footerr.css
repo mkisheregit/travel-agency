@@ -1,0 +1,80 @@
+.footerr {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: inherit;
+    height: max-content;
+    padding: 20px;
+    flex-wrap: wrap;
+    background-color: rgba(31, 41, 41, 0.835);
+    bottom: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+.link li {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    font-size: 20px;
+    font-weight: lighter;
+    text-transform: capitalize;
+    text-align: left;
+}
+
+ul .link {
+    text-decoration: none;
+}
+
+.link li:hover {
+    color: wheat;
+}
+
+.about-us,
+.info,
+.global-sites,
+.partners {
+    display: flex;
+    flex-direction: column;
+}
+
+ul>h2 {
+    color: crimson;
+}
+
+.motive {
+    font-family: "Raleway", sans-serif;
+    color: white;
+    font-weight: lighter;
+    font-size: 24px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.motive .fa {
+    margin-right: 10px;
+    font-size: 55px;
+    color: rgb(166, 228, 105);
+    border: 3px solid rgb(166, 228, 105);
+    padding: 20px;
+    border-radius: 50%;
+}
+
+.madewithlove p {
+    color: salmon;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+.heart {
+    color: red;
+    font-size: 24px;
+    padding: 5px;
+}

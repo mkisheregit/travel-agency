@@ -1,0 +1,242 @@
+.home {
+    width: 100%;
+    background-color: rgba(143, 188, 143, 0.349);
+}
+
+.input-box {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+    height: 405px;
+}
+
+.input-box>form>img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    z-index: -5;
+    margin: 0;
+    padding: 0;
+}
+
+.allinput-fields {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: -340px;
+    font-size: 21px;
+    color: white;
+    padding: 15px;
+}
+
+.allinput-fields>p {
+    background-color: rgba(100, 26, 26, 0.514);
+    padding: 5px;
+}
+
+.allinput-fields>p>input {
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 25px;
+    color: rgba(0, 0, 0, 0.685);
+}
+
+.addtrip-button {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.allinput-fields .interchange {
+    width: 30px;
+    border: none;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 5px;
+}
+
+.addtrip-button button:hover {
+    font-size: 120%;
+    color: rgba(0, 0, 255, 0.767);
+}
+
+.input-box button {
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    font-size: 23px;
+    color: rgb(179, 179, 212)
+}
+
+.allinput-fields>button:hover {
+    cursor: pointer;
+    color: rgba(0, 0, 255, 0.808);
+}
+
+ul {
+    list-style-type: none;
+}
+
+@media screen and (max-width:1100px) {
+    .allinput-fields {
+        margin-top: -400px;
+        font-size: 19px;
+        padding: 18px;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .allinput-fields {
+        margin-top: -400px;
+        font-size: 19px;
+        padding: 18px;
+    }
+    .allinput-fields>p>input {
+        height: 35px;
+        font-size: 19px;
+    }
+    .allinput-fields p div {
+        font-size: 18px;
+    }
+    .input-box button {
+        width: 180px;
+        height: 35px;
+        font-size: 21px;
+    }
+}
+
+@media screen and (max-width:574px) {
+    .allinput-fields {
+        margin-top: -400px;
+        font-size: 18px;
+        padding: 7px;
+    }
+    .allinput-fields>p>input {
+        height: 32px;
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+    .allinput-fields p div {
+        font-size: 12px;
+    }
+    .input-box button {
+        width: 160px;
+        height: 32px;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .allinput-fields {
+        margin-top: -410px;
+        font-size: 15px;
+        padding: 4px;
+    }
+    .allinput-fields>p>input {
+        height: 30px;
+        font-size: 14px;
+        margin-bottom: 4px;
+    }
+    .allinput-fields p div {
+        font-size: 9px;
+    }
+    .input-box button {
+        width: 140px;
+        height: 27px;
+        font-size: 14px;
+    }
+}
+
+.entries {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+ul>ul {
+    display: grid;
+    grid-template-columns: 10% 22.5% 22.5% 22.5% 22.5%;
+    align-items: center;
+    text-align: left;
+    width: 100%;
+    margin: 5px;
+    margin-left: 10px;
+    font-size: 20px;
+    padding: 4px;
+    background-color: black;
+    color: white;
+    font-weight: bolder;
+}
+
+.entries-items {
+    display: grid;
+    grid-template-columns: 10% 22.5% 22.5% 22.5% 20%;
+    align-items: center;
+    text-align: left;
+    width: 100%;
+    margin: 5px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+}
+
+.entries-items li {
+    border: none;
+    padding: 5px;
+    text-transform: capitalize;
+}
+
+.entries-items li:nth-child(1) {
+    color: black;
+    font-weight: bolder;
+}
+
+.entries-items li:nth-child(2) {
+    color: darkkhaki;
+}
+
+.entries-items li:nth-child(3) {
+    color: darkcyan;
+}
+
+ul div:nth-child(odd) {
+    background-color: aqua;
+}
+
+.entries-items button {
+    padding: 4px;
+    font-family: "Raleway";
+    font-weight: bold;
+    border: 0.5px solid rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+}
+
+.entries-items button:hover {
+    font-size: 110%;
+    background-color: white;
+    color: red;
+    border: none;
+}
+
+.go-to-link-container {
+    height: max-content;
+    margin-bottom: 15px;
+}
+
+.goto-link {
+    font-size: 25px;
+    text-decoration: none;
+    color: violet;
+    margin-bottom: 5px;
+    border: 1px solid rgba(0, 128, 128, 0.507);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.goto-link:hover {
+    color: blueviolet;
+    background-color: rgba(255, 127, 80, 0.226);
+}

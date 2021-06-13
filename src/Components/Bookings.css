@@ -1,0 +1,122 @@
+.bookings {
+    padding: 20px;
+    background-color: aqua;
+    max-height: max-content;
+    width: inherit;
+    height: 100vh;
+}
+
+.display-entry>div {
+    background-color: wheat;
+}
+
+.display-entry .entries-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-weight: lighter;
+    background-color: wheat;
+    padding-bottom: 20px;
+    color: darkcyan;
+}
+
+.display-entry .entry-num {
+    display: inline;
+    color: black;
+}
+
+.display-entry .main-entry {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+}
+
+.display-entry .main-entry p {
+    margin: 0 10px 0 10px;
+    font-size: 20px;
+}
+
+.display-entry .normal-entry {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.main-entry .e1 {
+    padding-left: 20px;
+    font-size: 23px;
+    color: darksalmon;
+}
+
+.normal-entry .e1 {
+    font-weight: bolder;
+    font-size: 18px;
+    padding-top: 10px;
+    color: darkseagreen;
+}
+
+.display-entry>div>div>p:nth-child(1) {
+    font-size: 23px;
+}
+
+.entry-num {
+    font-size: 25px;
+    color: lightslategrey;
+}
+
+.normal-entry-heading {
+    font-size: 20px;
+    color: white;
+}
+
+.normal-entry>p {
+    padding: 10px;
+    margin: 10px;
+}
+
+.display-entry button {
+    font-size: 20px;
+    border: 1px solid violet;
+    border-radius: 3px;
+    color: teal;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-right: 10px;
+    float: right;
+}
+
+.display-entry button:hover {
+    border: none;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.nothing-to-show {
+    padding: 10px;
+    text-align: center;
+    display: flex;
+}
+
+.nothing-to-show div {
+    height: max-content;
+    text-align: center;
+    width: 100vw;
+    padding-bottom: 20px;
+}
+
+.nothing-to-show p {
+    color: lightslategrey;
+    font-size: 24px;
+}
+
+h1 {
+    font-family: "Raleway";
+    color: rgba(0, 0, 0, 0.698);
+    text-align: center;
+}

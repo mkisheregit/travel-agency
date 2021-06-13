@@ -1,0 +1,227 @@
+.book-tickets {
+    margin: 0;
+    background-color: rgba(0, 255, 255, 0.404);
+    padding: 10px;
+    height: 100%;
+    height: max-content;
+    min-height: 100vh;
+}
+
+.fill-details-button {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    width: max-content;
+    margin: 20px auto 0 auto;
+    font-size: 25px;
+    font-family: "Raleway";
+    font-weight: bolder;
+    border: none;
+    border-radius: 4px;
+    color: cadetblue;
+}
+
+.fill-details-button:hover {
+    font-weight: lighter;
+    border: 1px solid aqua;
+}
+
+.fill-details-form {
+    margin-top: 20px;
+}
+
+.fill-details-form .inputs-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.fill-details-form>div>div>p {
+    font-size: 22px;
+}
+
+.fill-details-form>div>div>select {
+    font-size: 20px;
+    outline: none;
+    border: none;
+}
+
+.fill-details-form input {
+    padding: 5px;
+    font-size: 18px;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.719);
+    border: none;
+    border-radius: 3px;
+}
+
+.fill-details-form input:focus {
+    border-radius: 3px;
+    outline: none;
+    box-shadow: 1px 1px #fa807294;
+}
+
+.fill-details-form .updatebutton {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.fill-details-form .updatebutton button {
+    padding: 5px 15px 5px 15px;
+    font-size: 20px;
+    font-family: "Raleway";
+    font-weight: bolder;
+    border-radius: 3px;
+    border: none;
+    color: cadetblue;
+}
+
+.fill-details-form .updatebutton button:hover {
+    font-weight: lighter;
+}
+
+.fill-details-form .input-error {
+    font-size: 20px;
+}
+
+.fill-details-form .info {
+    font-size: 22px;
+    display: block;
+    text-align: center;
+    color: teal;
+}
+
+.info button {
+    padding: 2px 8px 2px 8px;
+    font-size: 16px;
+    border: 1px solid violet;
+    border-radius: 3px;
+    color: rebeccapurple;
+}
+
+.display-entry>div {
+    background-color: wheat;
+}
+
+.display-entry .entries-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-weight: lighter;
+    background-color: wheat;
+    padding-bottom: 20px;
+    color: darkcyan;
+    margin-bottom: 20px
+}
+
+.display-entry .entry-num {
+    display: inline;
+    color: black;
+}
+
+.display-entry .main-entry {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+}
+
+.display-entry .main-entry p {
+    margin: 0 10px 0 10px;
+    font-size: 20px;
+}
+
+.display-entry .normal-entry {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.main-entry .e1 {
+    padding-left: 20px;
+    font-size: 23px;
+    color: darksalmon;
+}
+
+.normal-entry .e1 {
+    font-weight: bolder;
+    font-size: 18px;
+    padding-top: 10px;
+    color: darkseagreen;
+}
+
+.display-entry>div>div>p:nth-child(1) {
+    font-size: 23px;
+}
+
+.entry-num {
+    font-size: 25px;
+    color: lightslategrey;
+}
+
+.normal-entry-heading {
+    font-size: 20px;
+    color: white;
+}
+
+.normal-entry>p {
+    padding: 10px;
+    margin: 10px;
+}
+
+.display-entry button {
+    font-size: 20px;
+    border: 1px solid violet;
+    border-radius: 3px;
+    color: teal;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-right: 10px;
+    float: right;
+}
+
+.display-entry button:hover {
+    border: none;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.goto-link-container {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.goto-link-container>.goto-link {
+    font-size: 25px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.582);
+    border: 1px solid rgba(0, 128, 128, 0.507);
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+    width: 200px;
+}
+
+.goto-link-container .goto-link:hover {
+    color: blueviolet;
+    background-color: rgba(255, 127, 80, 0.226);
+}
+
+.book-tickets .nothing-to-show {
+    margin-top: 20px;
+    width: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: white;
+}
