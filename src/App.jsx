@@ -218,7 +218,7 @@ function App() {
                     <Route path="/your-bookings"><Bookings  data={data} moredata={moredata} Removethisitem={Removethisitem} Deletewholeentry={Deletewholeentry}/></Route> 
 
                     <Route path="/contact-us"><Contact/></Route>
-                    <Route path="/travel-agency/"><Mktravels/></Route>
+              {/*   <Route path="/travel-agency/"><Mktravels/></Route> */}
 
                    <Route path="/about-us/site-map"><Sitemap/></Route>
                    <Route path="/about-us/carrear"><Carrer/></Route>
