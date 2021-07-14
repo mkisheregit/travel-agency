@@ -1,17 +1,18 @@
+/* we have used this file as css for all empty/additional components*/
+
 .blankpage {
     margin: 0;
     padding: 20px;
-    width: 100vw;
-    box-sizing: border-box;
-    height: 90vh;
     width: 100%;
-    background-image: url(https://images.unsplash.com/photo-1597239451147-f163967b8581?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTZ8fGNvZGluZ3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60), url(https://images.unsplash.com/photo-1542546068979-b6affb46ea8f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODV8fGNvZGluZ3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60);
-    background-position: center;
-    background-size: contain;
-    position: relative;
+    box-sizing: border-box;
+    min-height: 600px;
+    width: 100%;
+    background-image: -webkit-linear-gradient(50deg, #FAF9B2 50%, #F5E8B9 50%);
+    text-align: center;
 }
 
 .blankpage p:nth-child(1) {
+    margin: auto;
     width: max-content;
     height: max-content;
     background-color: rgba(107, 180, 107, 0.466);
@@ -23,20 +24,8 @@
     color: teal;
 }
 
-@keyframes showanim1 {
-    from {
-        background-color: pink;
-        margin-left: -28vw;
-        margin-top: 0;
-    }
-    to {
-        background-color: yellowgreen;
-        margin-left: 100vw;
-        margin-top: 0;
-    }
-}
-
 .blankpage p:nth-child(2) {
+    margin: auto;
     width: max-content;
     height: max-content;
     background-color: yellowgreen;
@@ -46,19 +35,6 @@
     padding: 20px;
     width: 20vw;
     color: black;
-}
-
-@keyframes showanim2 {
-    from {
-        background-color: yellow;
-        margin-left: -28vw;
-        margin-top: 0;
-    }
-    to {
-        background-color: pink;
-        margin-left: 100vw;
-        margin-top: 0;
-    }
 }
 
 .blankpage div {

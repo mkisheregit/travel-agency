@@ -42,7 +42,7 @@
     border: none;
     outline: none;
     font-size: 25px;
-    color: crimson;
+    color: rgba(0, 0, 0, 0.678);
     text-align: center;
 }
 
@@ -61,7 +61,6 @@
 }
 
 .addtrip-button button:hover {
-    font-size: 120%;
     color: rgba(0, 0, 255, 0.767);
 }
 

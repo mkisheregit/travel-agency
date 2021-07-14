@@ -1,30 +1,30 @@
 import React from 'react';
-import "./Bookings.css";
+import "../CSS/ViewBookingsPage.css";
 import { Link } from 'react-router-dom';
-function Bookings({data,moredata,Removethisitem,Deletewholeentry}) {
+function ViewBookingsPage({allTrips,allPassengerDetails,DeleteTrip,DeleteTripAndItsPassenger}) {
     return ( 
         <div className="bookings">
             <h1>Your all trips details will show here</h1>
-         
+         {/*Display evey info of each trip */}
             <div className="display-entry">
-                 {  data.length ?
-                  moredata.map((obj,index)=>{
+                 {  allTrips.length ?
+                  allPassengerDetails.map((obj,index)=>{
                       return (
                           <div> 
-                               <button type="button" onClick={()=>{Deletewholeentry(obj.ind);}}> X </button>
+                               <button type="button" onClick={()=>{DeleteTripAndItsPassenger(obj.ind);}}> X </button>
                              <div className="entries-section">
                               <p>Trip <p className="entry-num"> {index+1}</p></p>
 
                               <div className="main-entry">
-                                <p>From <span className="e1">{data[index].origin}</span></p>
-                               <p>To<span className="e1"> {data[index].destination}</span></p>
+                                <p>From <span className="e1">{allTrips[index].origin}</span></p>
+                               <p>To<span className="e1"> {allTrips[index].destination}</span></p>
                               </div>
 
                               <p className="normal-entry-heading">personal details</p>
 
                               <div className="normal-entry">
                                    
-                                <p> on <div className="e1">{data[index].dated}</div></p>
+                                <p> on <div className="e1">{allTrips[index].date}</div></p>
                                 <p>transport type<div className="e1">{obj.travelmedium}</div></p>
                                 
                                 <p> name <div className="e1">{obj.name}</div></p>
@@ -49,4 +49,4 @@ function Bookings({data,moredata,Removethisitem,Deletewholeentry}) {
            </div>
     )
 }
-export default Bookings;
+export default ViewBookingsPage;

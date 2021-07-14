@@ -3,7 +3,7 @@
     background-color: aqua;
     max-height: max-content;
     width: inherit;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .display-entry>div {

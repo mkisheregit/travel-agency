@@ -1,6 +1,6 @@
 {
     "name": "travelagency",
-
+    "homepage": "https://mkishere.github.io/travel-agency",
     "version": "0.1.0",
     "private": true,
     "dependencies": {

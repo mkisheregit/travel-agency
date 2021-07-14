@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import "./Contact.css";
+import "../CSS/ContactPage.css";
 import  { Link } from "react-router-dom";
-function Contact() {
-  const [allentries,setallentries]=useState({name:"",email:"",message:"",nameerror:"",emailerror:"",messageerror:""});
+function ContactPage() {
+  const [allentries,setallentries]=useState({name:"",email:"",message:"",nameError:"",emailError:"",messageError:""});
 
 
   const handlechange=(event)=>{
@@ -15,26 +15,26 @@ function Contact() {
       event.preventDefault();
     const isvalid = formisvalid();
     if (isvalid) {
-      setallentries({name:"",email:"",message:"",nameerror:"",emailerror:"",messageerror:""});
+      setallentries({name:"",email:"",message:"",nameError:"",emailError:"",messageError:""});
      console.log("form is submitted");
     }
   };
 
   const formisvalid=()=>{
-    let nameerror="";
-    let emailerror="";
-    let messageerror="";
+    let nameError="";
+    let emailError="";
+    let messageError="";
     if(!allentries.name){
-          nameerror="! name can't be empty";
+          nameError="! name can't be empty";
     }
     if(!allentries.email){
-      emailerror="! wrong email";
+      emailError="! wrong email";
 }
 if(!allentries.message){
-  messageerror="!message can't be empty";
+  messageError="!message can't be empty";
 }
-if(emailerror||nameerror||messageerror){
-  setallentries({...allentries,nameerror:nameerror,emailerror:emailerror,messageerror:messageerror});
+if(emailError||nameError||messageError){
+  setallentries({...allentries,nameError:nameError,emailError:emailError,messageError:messageError});
   return false;
 }
 return true;
@@ -93,11 +93,11 @@ return true;
 
                        <form onSubmit={(e)=>{submitform(e)}}>
                           <input type = "text" placeholder="..your name" value={allentries.name} name="name" onChange={(e)=>{handlechange(e)}} />
-                          <div className="warning" style={allentries.name ?{display:"none"}:{color:"red"}}>{allentries.nameerror}</div>
+                          <div className="warning" style={allentries.name ?{display:"none"}:{color:"red"}}>{allentries.nameError}</div>
                          <input type="email" placeholder="..mail id" value={allentries.email} name="email" onChange={(e)=>{handlechange(e)}} />
-                         <div className="warning" style={allentries.email ?{display:"none"}:{color:"red"}}>{allentries.emailerror}</div>
+                         <div className="warning" style={allentries.email ?{display:"none"}:{color:"red"}}>{allentries.emailError}</div>
                            <textarea  rows="6" placeholder="..drop your message here" value={allentries.message} onChange={(e)=>{handlechange(e)}} name="message" ></textarea >
-                           <div className="warning" style={allentries.message ?{display:"none"}:{color:"red"}}>{allentries.messageerror}</div>
+                           <div className="warning" style={allentries.message ?{display:"none"}:{color:"red"}}>{allentries.messageError}</div>
                             <button type="submit" className="submit-button"   >submit</button>
                            
                        </form>
@@ -109,4 +109,4 @@ return true;
        
 }
 
-export default Contact;
+export default ContactPage;

@@ -1,6 +1,6 @@
 import React from 'react'
 import {Link} from "react-router-dom";
-import "./Footerr.css";
+import "../../CSS/Footerr.css";
 function Footerr() {
     return (
         <div className="footerr">

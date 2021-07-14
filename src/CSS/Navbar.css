@@ -35,7 +35,6 @@
 
 .navbar-logo:hover {
     color: black;
-    font-size: 2.1rem;
 }
 
 .fa-bus {
@@ -56,7 +55,8 @@
     justify-content: flex-end;
 }
 
-.nav-item {
+.nav-menu .nav-item {
+    width: 180px;
     height: 80px;
 }
 
