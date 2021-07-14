@@ -1,6 +1,3 @@
-# Check out my project
-
-[link](https://user-images.githubusercontent.com/73874101/121822938-970d8e80-ccbf-11eb-9767-b35cb24af2ad.mp4)
 
 # Getting Started with Create React App
 
