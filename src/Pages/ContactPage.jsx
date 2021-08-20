@@ -80,11 +80,11 @@ return true;
                <div className="footer-section">
                    <div className="social-media">
                    <p>social media</p>
-                   <div class="icons">
-                      <Link  className="link"to="/contact-us/facebook">  <i class="fab fa-facebook-square"></i></Link>
-                      <Link  className="link"to="/contact-us/facebook"> <i class="fab fa-instagram"></i></Link>
-                      <Link className="link" to="/contact-us/facebook">  <i class="fab fa-twitter"></i> </Link>
-                      <Link className="link" to="/contact-us/facebook">   <i class="fab fa-linkedin"></i></Link>
+                   <div className="icons">
+                      <Link  className="link"to="/contact-us/facebook">  <i className="fab fa-facebook-square"></i></Link>
+                      <Link  className="link"to="/contact-us/facebook"> <i className="fab fa-instagram"></i></Link>
+                      <Link className="link" to="/contact-us/facebook">  <i className="fab fa-twitter"></i> </Link>
+                      <Link className="link" to="/contact-us/facebook">   <i className="fab fa-linkedin"></i></Link>
                        </div>
                    </div>
                    <div className="ask-something">

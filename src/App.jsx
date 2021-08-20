@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React,{useState,useEffect} from 'react';
 import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
 
 
@@ -54,15 +54,25 @@ const PASSENGER_DETAILS = {
 }
 
 function App() {
-     
+
+  const getDataFromlocalStorage= (value)=>{
+   let getallTrips = localStorage.getItem('alltripsData');
+   let getallPassengerDetails= localStorage.getItem('allPassengerDetailsData');
+   if(value===1){
+   return getallTrips ? JSON.parse(getallTrips) : [];
+   }
+   else{
+     return getallPassengerDetails ? JSON.parse(getallPassengerDetails): [];
+   }
+  }  
   /* alltrips: array which has objects "tripdetails" as its elements  */
-    const [allTrips, setAllTrips] = useState([]); 
+    const [allTrips, setAllTrips] = useState(getDataFromlocalStorage(1)); 
 
    /*tripdetails: object and has property origin,destination and date */
     const [tripdetails, setTripDetails] = useState(TRIP_DETAILS);
     
     /*allPassengerDetails: array and has "passenger" as its elements */
-    const [allPassengerDetails,setAllPassengerDetails]=useState([]);
+    const [allPassengerDetails,setAllPassengerDetails]=useState(getDataFromlocalStorage(2));
 
     /* passenger:obect  has details of passenger like name ,age, mobNo etc.*/
    const [passenger,setPassenger]=useState(PASSENGER_DETAILS);
@@ -219,8 +229,12 @@ function DeletePassenger(objid){
         });
       });
      }
-   
-    
+  //  use of localStorage
+    useEffect(() => {
+     localStorage.setItem('alltripsData',JSON.stringify(allTrips));
+     localStorage.setItem('allPassengerDetailsData',JSON.stringify(allPassengerDetails));
+      }, [allTrips,allPassengerDetails]);
+
     return (
         <div> 
             <Router>

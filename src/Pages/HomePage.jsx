@@ -34,7 +34,7 @@ function HomePage({allTrips, handleTripDetails,UpdateAllTrips,DeleteTrip,tripdet
              </p>
 
              {/*button which will interchange value between origin and destination */}
-             <p><button type="button" className="interchange" onClick={()=>interchange()}><i class="fas fa-exchange-alt"></i></button></p>
+             <p><button type="button" className="interchange" onClick={()=>interchange()}><i className="fas fa-exchange-alt"></i></button></p>
            
 
              {/* DESTINATION input field */}
